@@ -40,4 +40,3 @@ plt.title("Title")
 print(rSquared)
 print(t)
 print(m)
-
