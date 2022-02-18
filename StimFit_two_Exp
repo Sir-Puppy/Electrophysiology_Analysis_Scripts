@@ -6,10 +6,9 @@ For fitting of gating current raw traces in stimfit
 
 To use this in Stimfit, write:
     
-import Batch_fitting2
-Batch_fitting2.trace_fit()
+import StimFit_two_Exp (Or whatever name you save it as)
+StimFit_two_Exp.trace_fit()
 
-Warning, Naming is not yet perfected!!
 """
 #make sure to set the start cursor as the peak
 import stf
@@ -18,22 +17,22 @@ import csv
 
 Result = []
 
-file_header = ["SSE", "Tau_0", "Amp_0", "Offset"]
+file_header = ["SSE", "Tau_0", "Amp_0", "Offset"]       #Header that will be used when 
 
 
 def trace_fit():
     
-    stf.set_channel(3)
+    stf.set_channel(3)                                   #chooses which trace to use
     
-    f = open("C:\\Users\HPNote2019\Desktop\Stim fit trial\Stimfit.csv", 'wb')
+    f = open("<Your folder here>", 'wb')                 #Opens the folder where the data will be written
 
-    for n in range(6, 27, 5):
+    for n in range(6, 27, 5):                            #parameter and trace selection
         stf.select_trace(n)
         stf.set_trace(n)
         stf.leastsq(0)
         Result.append(stf.leastsq(0))
         Name = stf.get_filename()    
-    with f as file:
+    with f as file:                                       #Writing of data
         csv.writer(file).writerow([Name])
         csv.writer(file).writerow(file_header)
         
