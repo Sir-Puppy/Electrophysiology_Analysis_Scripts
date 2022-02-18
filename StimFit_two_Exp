@@ -40,4 +40,4 @@ def trace_fit():
             csv.writer(file).writerow([item["SSE"], item["Tau_0"], item["Amp_0"], item["Offset"]])
     f.close()
     
-
+   
