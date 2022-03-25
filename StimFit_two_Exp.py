@@ -12,7 +12,6 @@ StimFit_two_Exp.trace_fit()
 """
 #make sure to set the start cursor as the peak
 import stf
-
 import csv
 
 Result = []
