@@ -7,7 +7,6 @@ import numpy as np
 import scipy.optimize
 import matplotlib.pyplot as plt
 
-
 xs = np.arange(12) + 1 # 12 data points, Evenly spaced out
 ys = np.array([0,-0.729378909,-0.882950644,-0.922148569,-0.934474881,-0.93882252,-0.940872608,-0.941838795,-0.942224169,-0.942402192,-0.942266627,-0.94244689])
 
