@@ -1,0 +1,29 @@
+
+Function DoWhile(a)
+	variable a;
+	
+	
+	
+	string str1 = "root:W220210_2_E1_1_3_"
+	
+	string str2 = "_1"
+	
+	string together
+
+	a = 1;
+	
+
+	do	
+	
+		together = str1 + num2str(a) + str2
+		
+		wave wr=$together
+		
+
+		print area(wr, 0.1505, 0.2005)
+	
+				
+		a += 1;
+		
+	while( a<23)
+end
