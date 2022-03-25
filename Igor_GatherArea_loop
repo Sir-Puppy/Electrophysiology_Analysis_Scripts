@@ -1,4 +1,4 @@
-
+#pragma TextEncoding = "UTF-8"
 Function DoWhile(a)
 	variable a;
 	
