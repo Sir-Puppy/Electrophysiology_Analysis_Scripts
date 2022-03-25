@@ -23,7 +23,6 @@ Function DoWhile(a) //Unsure why, but Igor requires an imput, rather than just a
 		together = str1 + num2str(a) + str2 //Stitch together the two halves plus variable to form the wave name in string format
 		
 		wave wr=$together //modify string into wave
-		
 
 		print area(wr, 0.1505, 0.2005) //prints area of wave between 0.1505 and 0.2005
 	
